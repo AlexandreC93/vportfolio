@@ -1,0 +1,148 @@
+
+
+// Variable
+
+$medium: 768px;
+
+body{
+    background-color: black;
+}
+header{
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(19, 18, 18, 0.781) 5.24%, rgba(28, 28, 28, 0.4)),
+    url(/img/header-1.jpg) center center /cover no-repeat ;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+}
+.title-name{
+    color: white;
+}
+
+.nav-head{
+    color: white;
+}
+
+#container{
+     background:  linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(19, 18, 18, 0.781) 5.24%, rgba(28, 28, 28, 0.4)),
+    url(img/header-2.jpg) center center /cover no-repeat ;
+    height: 100vh;
+}
+
+
+
+
+h1  {
+  color: lighten(#34c4e8, 30%);
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 200;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+* {
+    transition:.25s ease-in-out;
+    box-sizing:border-box;
+  }
+  
+
+  
+  span {
+   
+    background:#566973;
+    border-radius:2px;
+  }
+  
+  #menu-toggle {
+    width:100px;
+    height:100px;
+    margin:50px auto;
+    cursor:pointer;
+    background:rgba(255,255,255,.4);
+    border-radius:5px;
+    &:hover {
+      background:rgba(255,255,255,.8);
+    }
+    #hamburger {
+
+      height:100%;
+      width:100%;
+      span {
+        width:60px;
+        height:4px;
+     
+        top:24px;
+        left:20px;
+        margin:10px 0;
+        &:nth-child(1){
+          transition-delay:.5s;
+        }
+        &:nth-child(2){
+          transition-delay:.625s;
+        }
+        &:nth-child(3){
+          transition-delay:.75s;
+        }
+      }
+    }
+    #cross {
+    
+      height:100%;
+      width:100%;
+      transform:rotate(45deg);
+      span{
+        &:nth-child(1){
+          height:0%;
+          width:4px;
+    
+          top:10%;
+          left:48px;
+          transition-delay:0s;
+        }
+        &:nth-child(2){
+          width:0%;
+          height:4px;
+        
+          left:10%;
+          top:48px;
+          transition-delay:.25s;
+        }
+      }
+    }
+  }
+  
+  #menu-toggle.open {
+    #hamburger {
+      span {
+        width:0%;
+        &:nth-child(1){
+          transition-delay:0s;
+        }
+        &:nth-child(2){
+          transition-delay:.125s;
+        }
+        &:nth-child(3){
+          transition-delay:.25s;
+        }
+      }
+    }
+    #cross {
+      span {
+        &:nth-child(1){
+          height:80%;
+          transition-delay:.625s;
+        }
+      }
+      span {
+        &:nth-child(2){
+          width:80%;
+          transition-delay:.375s;
+        }
+      }    
+    }
+  }
+
+
+// .img-head{
+//     background-color: ;
+// }
