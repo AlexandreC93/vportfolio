@@ -1,40 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
-    <title>Document</title>
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
+  <title>Document</title>
+
 </head>
+
 <body>
-    
-    <header>
 
-        <div id="head">
-        <h1 class="title-name">Alexandre CADINOT</h1>
-        </div>
+  <header>
 
-        
-        <div id="menu-toggle">
-            <div id="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div id="cross">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-    </header>
-
-    <div id="container">
-        <h1 class="title">Titre
-        </h1>
+    <div id="head">
+      <h1 class="title-name fade">Alexandre CADINOT</h1>
     </div>
-    <script src="js.js"></script>
+
+
+    <nav role="navigation">
+      <div id="menuToggle">
+         <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+              <a href='#head'><li>Home</li></a>
+              <a href='#container'><li>Projets</li></a>
+              <a href='#'><li>Info</li></a>
+              <a href='#'><li>Contact</li></a>
+          </ul>
+     </div>
+  </nav> 
+
+    <h4 class="font fade">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti enim deserunt doloribus, non quaerat earum corporis, praesentium dolores rerum, quibusdam voluptates facilis voluptatibus tenetur placeat. Enim ipsa aspernatur eum excepturi.</h4>
+
+  </header>
+
+  <div id="aprop">
+
+<div id="present">
+
+<img src="" alt="">
+
+<h1 class="font">Alexandre Cadinot</h1>
+
+</div>
+
+  </div>
+
+  <div id="container">
+    <h1 class="title">Projets
+    </h1>
+
+    <ul class="list">
+      <li class="hide"><img src="/img/header-2.png" class="li-1" alt="img"></li>
+      <li class="prev"><img src="/img/header-1.jpg" class="li-2" alt="img"></li>
+      <li class="act"><img src="/img/metro-small.jpg" class="li-3 " alt="img"><h3 class="font"></h3></li>
+      <li class="next"> <img src="/img/header-2.png" class="li-4" alt="img" > <h3 class="font"></h3> </li>
+      <li class="next new-next "></li>
+    </ul>
+    
+    <div class="swipe"></div>
+
+  </div>
+
+  <footer>
+<div class="foot">
+  <ul>
+    <li class="btn-foot">oui</li>
+    <li class="btn-foot">non</li>
+    <li class="btn-foot">info</li>
+  </ul>
+</div>
+
+<div class="foot">
+  <ul>
+    <li class="btn-foot">projet</li>
+    <li class="btn-foot">contact</li>
+    <li class="btn-foot">infos</li>
+  </ul>
+</div>
+  </footer>
+
+
+
+  <script src="js.js"></script>
 </body>
+
 </html>
